@@ -1,14 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent" android:paddingStart="@dimen/padding" android:paddingTop="@dimen/padding"
+        android:gravity="center_horizontal">
+
     <TextView
             android:text="@string/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:textAlignment="center"
-            android:id="@+id/name_text"/>
+            android:id="@+id/name_text"
+            android:lineSpacingMultiplier="1.2"/>
+    <TextView
+            android:text="TextView"
+            style="@style/name_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/nickname_text" android:visibility="gone"
+            android:textAlignment="center"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:id="@+id/nickname_edit" style="@style/name_style"
+            android:hint="@string/what_is_your_nickname" android:textAlignment="center"/>
+    <Button
+            android:text="@string/done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/button" android:fontFamily="@font/roboto"
+            android:layout_marginTop="@dimen/layout_margin" android:textAlignment="center"
+            android:gravity="center_horizontal"
+            style="@style/Widget.AppCompat.Button.Colored"/>
     <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -20,8 +43,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
         <TextView
-                style ="@style/name_style"
-                android:text="Hi,my name is Yunqi Li"
+                style="@style/name_style"
+                android:text="Hi,my name is Yunqi Li, I am frome China. My hometoen is QingDao, it is a bueatiful costal city"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/bio_text"/>

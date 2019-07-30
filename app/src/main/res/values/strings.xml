@@ -2,4 +2,6 @@
     <string name="app_name">AboutMe</string>
     <string name="name">Yunqi Li</string>
     <string name="yello_star">yellow star</string>
+    <string name="what_is_your_nickname">What is your nickname</string>
+    <string name="done"> done</string>
 </resources>
